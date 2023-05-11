@@ -16,6 +16,6 @@ class Docker implements Serializable {
         		srcipt.sh "echo $script.PASS | docker login -u $script.USER --password-stdin"
         		script.sh "docker build -t $imageName ."
         		script.sh "docker push $imageName"
-    }
+		}
 	}
 }
